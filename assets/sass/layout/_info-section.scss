@@ -1,0 +1,74 @@
+main {
+    min-height: 70vh;
+    height: 70vh;
+
+    @include flex(row, center, flex-start);
+    gap: 3.3rem;
+    padding: 0 4.5rem;
+
+    > .image {
+        @include size(100%);
+        flex: 1 0 277px;
+        margin-top: 0.39rem;
+
+        img {
+            @include img-fluid();
+        }
+    }
+
+    > .content {
+        @include flex(column, center, flex-start);
+        margin-top: calc(9vh + 0.31rem);
+        flex: 1 0 100px;
+        width: 100%;
+        gap: 1.25rem;
+
+        p {
+            font-family: $theme-alt-font;
+            font-size: 1.12rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+@include media-breakpoint-up($screen-md, max-width) {
+    main {
+        padding: 0 2rem;
+
+        .image {
+            flex-basis: 100px;
+        }
+    }
+}
+
+@include media-breakpoint-up($screen-xl, max-width) {
+    main {
+        height: fit-content;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 3rem;
+
+        .content {
+            margin: 2rem 0 4rem 0;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+
+            p {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up($screen-rwd, min-width) {
+    main {
+        max-width: 1650px;
+        align-items: center;
+        margin: 0 auto;
+
+        .content {
+            margin: 0;
+        }
+    }
+}

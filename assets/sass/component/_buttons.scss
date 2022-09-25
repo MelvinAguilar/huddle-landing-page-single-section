@@ -1,0 +1,31 @@
+button.btn {
+    border: 1px solid $theme-background-color;
+
+    border-radius: 4rem;
+    padding: 0.4rem 1.7rem;
+    cursor: pointer;
+
+    background-color: $theme-white-color;
+    color: $theme-background-color;
+   
+    font-size: 0.9rem;
+    font-weight: 400;
+    
+    box-shadow: $theme-box-shadow;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $theme-background-color-alt;
+        color: $theme-background-color;
+        transform: scale(1.1);
+        box-shadow: $theme-box-shadow-hover;
+    }
+
+    &.btn-primary {
+        padding: 1rem 4rem;
+        border: none;
+
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,44 @@
+footer {
+    height: 10vh;
+
+    .social-media ul {
+        justify-content: flex-end;
+        padding: 0 5rem;
+        li a {
+            @include size(2.5rem);
+            text-decoration: none;
+
+            border: 1px solid $theme-white-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            
+            display: inline-flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            
+            color: $theme-white-color;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+    
+            &:hover {
+                transform: scale(1.3);
+                color: $theme-background-color;
+                border-color: $theme-background-color-alt;
+                background-color: $theme-background-color-alt;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up($screen-xl, max-width) {
+    footer .social-media ul {
+        justify-content: center;
+        padding: 0 1rem 2rem 1rem;
+
+        li a {
+            @include size(3rem);
+            font-size: 1.5rem;
+        }
+    }
+}

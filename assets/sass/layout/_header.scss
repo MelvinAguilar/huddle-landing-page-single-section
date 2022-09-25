@@ -1,0 +1,31 @@
+body > header {
+    margin: 0 4.3rem;
+    height: 20vh;
+
+    @include flex(row);
+    justify-content: space-between;
+
+    img {
+        max-width: 13.49rem;
+        padding-top: 0.3rem;
+
+        @include img-fluid;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: red;
+            transform: scale(1.1) translateX(0.5rem);
+        }
+    }
+}
+
+@include media-breakpoint-up($screen-md, max-width) {
+    body > header{
+        margin: 0 2rem;
+        height: 15vh;
+
+        img {
+            max-width: 8.49rem;
+        }
+    } 
+}

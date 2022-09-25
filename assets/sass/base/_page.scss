@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    font-family: $theme-text-font;
+    color: $theme-white-color;
+
+    line-height: $theme-line-height;
+    transition: all 0.3s ease-in-out;
+
+    //background: $theme-background-color url('../images/bg-mobile.svg') no-repeat left top/contain;
+    background: $theme-background-color url('../images/bg-mobile.svg') no-repeat left top;
+    background-size: contain;
+    background-position: 0 top;
+}
+
+@include media-breakpoint-up($screen-xl, min-width) {
+    body {
+        background-size: cover;
+        background-image: url('../images/bg-desktop.svg');
+    }
+}
+
+@include media-breakpoint-up($screen-xxl, width) {
+    body {
+        background-size: contain;
+    }
+}
