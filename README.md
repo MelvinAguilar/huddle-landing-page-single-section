@@ -2,7 +2,14 @@
 
 ![](./design/screenshot.png)
 
-This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+<h2 align="center">Links</h2>
+
+- Solution URL: [Huddle Landing Page Single Section (SASS + Flexbox + Responsive) | Frontend Mentor](https://www.frontendmentor.io/solutions/huddle-landing-page-single-section-sass-flexbox-responsive-uD0wRltGpo)
+- Live Site URL: [https://huddle-landing-page-single-section-hdz.vercel.app/](https://huddle-landing-page-single-section-hdz.vercel.app/)
+
+<br>
 
 ## Table of contents
 
