@@ -1,15 +1,15 @@
 main {
-    min-height: 70vh;
     height: 70vh;
+    max-width: 103.125rem;
 
-    @include flex(row, center, flex-start);
-    gap: 3.3rem;
     padding: 0 4.5rem;
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 3.3rem;
 
     > .image {
         @include size(100%);
-        flex: 1 0 277px;
-        margin-top: 0.39rem;
+        //margin-top: 0.39rem;
 
         img {
             @include img-fluid();
@@ -18,9 +18,7 @@ main {
 
     > .content {
         @include flex(column, center, flex-start);
-        margin-top: calc(9vh + 0.31rem);
-        flex: 1 0 100px;
-        width: 100%;
+        //margin-top: calc(9vh + 0.31rem);
         gap: 1.25rem;
 
         p {
@@ -29,22 +27,14 @@ main {
             margin-right: 1rem;
         }
     }
-}
 
-@include media-breakpoint-up($screen-md, max-width) {
-    main {
+    @include media-breakpoint-up($screen-md, max-width) {
         padding: 0 2rem;
-
-        .image {
-            flex-basis: 100px;
-        }
     }
-}
 
-@include media-breakpoint-up($screen-xl, max-width) {
-    main {
+    @include media-breakpoint-up($screen-xl, max-width) {
         height: fit-content;
-        flex-direction: column;
+        grid-template-columns: auto;
         gap: 1rem;
         padding: 0 3rem;
 
@@ -59,11 +49,8 @@ main {
             }
         }
     }
-}
-
-@include media-breakpoint-up($screen-rwd, min-width) {
-    main {
-        max-width: 1650px;
+    
+    @include media-breakpoint-up($screen-rwd, min-width) {
         align-items: center;
         margin: 0 auto;
 

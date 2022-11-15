@@ -1,15 +1,20 @@
 body {
-    width: 100%;
     font-family: $theme-text-font;
     color: $theme-white-color;
 
     line-height: $theme-line-height;
     transition: all 0.3s ease-in-out;
 
-    //background: $theme-background-color url('../images/bg-mobile.svg') no-repeat left top/contain;
     background: $theme-background-color url('../images/bg-mobile.svg') no-repeat left top;
     background-size: contain;
     background-position: 0 top;
+}
+
+:is(a, button, input, textarea, select, details, summary) {
+    &:focus-visible {
+        outline: $theme-white-color dotted 0.188rem;
+        outline-offset: 0.18rem
+    }
 }
 
 @include media-breakpoint-up($screen-xl, min-width) {

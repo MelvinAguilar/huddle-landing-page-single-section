@@ -7,13 +7,12 @@
 @import "base/reset";
 @import "base/page";
 
-/* Layout */
-@import "layout/info-section";
-@import "layout/header";
-
-@import "layout/footer";
 /* Components */
 @import "component/buttons";
 @import "component/heading";
-
 @import "component/horizontal-list";
+
+/* Layout */
+@import "layout/info-section";
+@import "layout/header";
+@import "layout/footer";
